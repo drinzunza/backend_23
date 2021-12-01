@@ -126,3 +126,74 @@ for student in students:
     total += age
 
 print(total)
+
+
+
+
+
+
+
+# Find the minimum algorithm
+
+ages = [ 62,34,21,78,23,88,20, 65,32, 17, 94, 17, 16, 65,21,89]
+
+min = ages[0]
+for num in ages:
+    if num < min:
+        min = num
+
+print(f"the youngest person's age is {min}")
+
+
+
+
+
+
+
+
+
+# endpoint that will return a list of strings
+# the list will contain the unique categories
+
+
+# 2 - print each category from the products
+# 3 - create a new list
+
+# 6 - if the category does not exist inside the list
+    # 4 - push category into the list
+
+# 5 - print the list
+
+from mock_data import catalog
+
+
+def get_unique_categories():
+    print("-" * 30)
+
+    categories = []
+    for prod in catalog:
+        cat = prod["category"]
+        if cat not in categories:
+            categories.append(cat)
+        
+    print(categories)
+
+
+
+get_unique_categories()
+
+
+colors = ["red", "blue", "orange", "orange", "Blue", "Green", "Red", "blue", "Black", "gray", "GrAY", "oRanGE"]
+
+# get the unique colors as a list
+def get_unique_colors(): 
+    print("*" * 30)
+    
+    result = []    
+    for color in colors:
+        if color.lower() not in result:
+            result.append(color.lower())
+
+    print(result)
+
+get_unique_colors()

@@ -6,3 +6,25 @@ python -m venv venv
 
 # activate the venv
 venv\Scripts\activate
+
+
+
+### GIT COMMANDS 1 time
+git init
+
+git add .
+ 
+git commit -m "any meesage"
+
+git remote add origin <URL>
+
+git push -u origin master
+
+
+### GIT COMMANDS next times
+
+git add .
+
+git commit -m "any message"
+
+git push
